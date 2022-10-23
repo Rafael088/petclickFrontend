@@ -1,14 +1,29 @@
 import '../css/mascota.css';
 import MaxImg from '../img/perritoMax.png';
 import TomImg from '../img/tomGato.png';
+import React, { useState } from 'react';
+
 function Mascota({data}) {
     const img = "TomImg";
+    const [modalDelete, setModalDelete] = useState(false);
+    async function changeDelete() {
+            let urlPets = `http://localhost:3001/pets${data.idpet}`;
+            await fetch(urlPets,{
+                method: 'DELETE',
+            })
+            setModalDelete(false)
+    }
     return ( 
         <div className="mascota">
+            {modalDelete?<div className='contModal'>
+                <p>Estas seguro de Eliminar esta mascota?</p>
+                <b>Esta acción es irreversible</b>
+                <button onClick={()=> changeDelete()}>Aceptar</button>
+            </div>:<></>}
             <div className='head'>
                 <img src={img==="MaxImg"?MaxImg:TomImg} alt=""/>
                 <h3>{data.name}</h3>
-                <div className='btnEliminar'/>
+                <button onClick={()=> setModalDelete(true)} className='btnEliminar'/>
             </div>
             <div className='body'>
                 <div className='line especie'>
