@@ -9,7 +9,40 @@
     justify-content: center;
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
-
+.register .contModalRegister{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register .contModalRegister .contBody{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: #e6dee9;
+    box-shadow: 1px 2px 20px 20px rgba(152, 150, 240, 0.7);
+}
+.register .contModalRegister .contBody .btnA{
+    width: 20%;
+    height: 10%;
+    border: none;
+    border-radius: 10px;
+    background-color: #9896F0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .logoCont{
     width: 50%;
     height: 80%;
@@ -33,6 +66,10 @@
 .register .contForm .form{
     width: 70%;
     height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background: rgba(255, 255, 255, 0.5);
     border-left: 2px solid rgba(255, 255, 255, 0.5);
     border-top: 2px solid rgba(255, 255, 255, 0.5);
@@ -48,6 +85,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .register .contForm .form .headerForm{
     display: flex;
@@ -55,7 +93,7 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 30%;
+    height: 20%;
     
 }
 .register .contForm .form .headerForm h1{
@@ -67,9 +105,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50%;
+    height: 80%;
 }
-.register .contForm .form .bodyForm .inputUser{
+.register .contForm .form .bodyForm .input{
     width: 80%;
     gap: 10px;
     height: 50px;
@@ -77,8 +115,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
-.register .contForm .form .bodyForm .inputUser input{
+.register .contForm .form .bodyForm .input input{
     width: 100%;
     height: 100%;
     border: none;
@@ -88,102 +127,18 @@
     border-radius: 15px;
 }
 
-.register .contForm .form .bodyForm .inputPassword{
-    width: 80%;
-    height: 50px;
-    gap: 10px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.register .contForm .form .bodyForm .inputPassword input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border: #71C5EE 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
-.register .contForm .form .bodyForm .inputNumber{
-    width: 80%;
-    height: 50px;
-    gap: 10px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.register .contForm .form .bodyForm .inputNumber input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border: #71C5EE 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
-.register .contForm .form .bodyForm .inputEmail{
-    width: 80%;
-    height: 50px;
-    gap: 10px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.register .contForm .form .bodyForm .inputEmail input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border: #71C5EE 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
-.register .contForm .form .bodyForm .inputId{
-    width: 80%;
-    height: 50px;
-    gap: 10px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.register .contForm .form .bodyForm .inputId input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border: #71C5EE 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
-.register .contForm .form .bodyForm .inputCity{
-    width: 80%;
-    height: 50px;
-    gap: 10px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.register .contForm .form .bodyForm .inputCity input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    border: #71C5EE 1px solid;
-    padding: 5px;
-    border-radius: 15px;
-}
+
 .register .contForm .form .bodyForm .inputButtonRegister{
-    width: 40%;
-    height: 20%;
+    width: 100%;
+    height: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .register .contForm .form .bodyForm .inputButtonRegister input{
-    width: 90%;
-    height: 100%;
+    width: 30%;
+    height: 60%;
     margin-top: 10px;
     border: none;
     background-color: #9896F0;
@@ -191,28 +146,40 @@
     transition: all 0.2s;
 }
 .register .contForm .form .bodyForm .inputButtonRegister input:hover{
-    width: 100%;
+    width: 33%;
     background-color: transparent;
     border: 1px solid #9896F0;
     color: #9896F0;
     cursor: pointer;
 }
-
-.register .contForm .form .bodyForm .cancelRegister input{
-    width: 150%;
-    height: 100%;
+.register .contForm .form .bodyForm .cancelRegister{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register .contForm .form .bodyForm .cancelRegister .btnCancel{
+    width: 30%;
+    height: 60%;
     margin-top: 10px;
     border: none;
-    background-color: #9896F0;
+    background-color: #fdcbf1;
     border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
     transition: all 0.2s;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.register .contForm .form .bodyForm .cancelRegister input:hover{
-    width: 100%;
+.register .contForm .form .bodyForm .cancelRegister .btnCancel:hover{
+    width: 33%;
     background-color: transparent;
     border: 1px solid #9896F0;
-    color: #9896F0;
-    cursor: pointer;
 }
 .register .contForm .form .footerForm{
     display: flex;
@@ -220,6 +187,9 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 20%;
+    height: 10%;
     gap: 30px;
+}
+.register .contForm .form .footerForm p{
+    display: none;
 }

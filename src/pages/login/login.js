@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 import ModalValid from '../../components/ModalValid';
+import { NavLink } from 'react-router-dom';
 
 function Login() {
 
@@ -61,7 +62,7 @@ function Login() {
                             <a href="/">ForgetPassword</a>
                         </div>
                         <div className='loginRegister'>
-                            <a href="/register">Register</a>
+                            <NavLink to="/register">Register</NavLink>
                         </div>
                     </div>
                 </div>
