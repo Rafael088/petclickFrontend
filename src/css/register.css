@@ -1,0 +1,225 @@
+.register{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.logoCont{
+    width: 50%;
+    height: 80%;
+    margin-top: -15%;
+    background-image: url('../img/Logo-removebg-preview.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.register .contForm{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register .contForm .form{
+    width: 70%;
+    height: 95%;
+    background: rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 1px 2px 20px 20px rgba(152, 150, 240, 0.7);
+}
+.register .contForm .form .formInput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register .contForm .form .headerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    
+}
+.register .contForm .form .headerForm h1{
+    color: #9896F0;
+}
+.register .contForm .form .bodyForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+.register .contForm .form .bodyForm .inputUser{
+    width: 80%;
+    gap: 10px;
+    height: 50px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.register .contForm .form .bodyForm .inputUser input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.register .contForm .form .bodyForm .inputPassword{
+    width: 80%;
+    height: 50px;
+    gap: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.register .contForm .form .bodyForm .inputPassword input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+.register .contForm .form .bodyForm .inputNumber{
+    width: 80%;
+    height: 50px;
+    gap: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.register .contForm .form .bodyForm .inputNumber input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+.register .contForm .form .bodyForm .inputEmail{
+    width: 80%;
+    height: 50px;
+    gap: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.register .contForm .form .bodyForm .inputEmail input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+.register .contForm .form .bodyForm .inputId{
+    width: 80%;
+    height: 50px;
+    gap: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.register .contForm .form .bodyForm .inputId input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+.register .contForm .form .bodyForm .inputCity{
+    width: 80%;
+    height: 50px;
+    gap: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.register .contForm .form .bodyForm .inputCity input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: #71C5EE 1px solid;
+    padding: 5px;
+    border-radius: 15px;
+}
+.register .contForm .form .bodyForm .inputButtonRegister{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register .contForm .form .bodyForm .inputButtonRegister input{
+    width: 90%;
+    height: 100%;
+    margin-top: 10px;
+    border: none;
+    background-color: #9896F0;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+.register .contForm .form .bodyForm .inputButtonRegister input:hover{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #9896F0;
+    color: #9896F0;
+    cursor: pointer;
+}
+
+.register .contForm .form .bodyForm .cancelRegister input{
+    width: 150%;
+    height: 100%;
+    margin-top: 10px;
+    border: none;
+    background-color: #9896F0;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+.register .contForm .form .bodyForm .cancelRegister input:hover{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #9896F0;
+    color: #9896F0;
+    cursor: pointer;
+}
+.register .contForm .form .footerForm{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    gap: 30px;
+}

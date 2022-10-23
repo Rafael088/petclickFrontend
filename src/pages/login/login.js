@@ -60,8 +60,8 @@ function Login() {
                         <div className='forgetPassword'>
                             <a href="/">ForgetPassword</a>
                         </div>
-                        <div className='register'>
-                            <a href="/">Register</a>
+                        <div className='loginRegister'>
+                            <a href="/register">Register</a>
                         </div>
                     </div>
                 </div>
