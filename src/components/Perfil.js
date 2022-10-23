@@ -6,7 +6,7 @@ function Perfil() {
     
     const cookies = new Cookies();
     
-    const [userID] = useState(cookies.get('username'));
+    const [username] = useState(cookies.get('username'));
 
     var [menu, setMenu] = useState(false);
     function chandleTrue() {
@@ -17,7 +17,7 @@ function Perfil() {
     }
     return ( 
         <div className="contPerfil">
-            <h4>{userID} 
+            <h4>{username} 
                 <p>Ver Perfil</p>
             </h4>
             <div className='imgPerfil' onClick={chandleTrue}>

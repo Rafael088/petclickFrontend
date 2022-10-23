@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    animation: animHome 0.5s ease-in;
+    animation: animHome 0.3s ease-in;
 }
 .contBody .body{
     width: 90%;

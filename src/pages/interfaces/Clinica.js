@@ -1,16 +1,12 @@
-
-import HomeComp from '../../components/HomeComp';
-import Cookies from 'universal-cookie';
-import '../../css/home.css';
-import React, { useState } from 'react';
-import Mascotas from '../../components/Mascotas';
-import Calendario from '../../components/Calendar';
 import NavBar from '../../components/NavBar';
+import '../../css/clinica.css';
+import Cookies from 'universal-cookie';
+import PanelWelcome from '../../components/PanelWelcome';
+import React, { useState } from 'react';
 
-function Home() {
-    
+function Clinica() {
     const cookies = new Cookies();
-    const [position, setPosition] = useState(0);
+    const [position, setPosition] = useState(1);
     function changeHome() {
         setPosition(0);
     }
@@ -20,6 +16,7 @@ function Home() {
     function changeMascot() {
         setPosition(2);
     }
+
     function cerrarSesion() {
         cookies.remove('username', {path:"/"});
         cookies.remove('id', {path:"/"});
@@ -27,13 +24,11 @@ function Home() {
         window.location.href="./";
     }
     return ( 
-        <div className="contHome">
+        <div className="contClinica">
             <NavBar changeHome={changeHome} changeCalendar={changeCalendar} changeMascot={changeMascot} cerrarSesion={cerrarSesion} position={position}/>
-            {position === 0? <HomeComp/>:<></>}
-            {position === 1? <Calendario/>:<></>}
-            {position === 2? <Mascotas/>:<></>}
+            {position === 1?<PanelWelcome/>:<></>}
         </div>
      );
 }
 
-export default Home;
+export default Clinica;

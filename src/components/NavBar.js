@@ -1,7 +1,8 @@
 
 import { AiFillCalendar, AiFillHome, AiFillGitlab } from "react-icons/ai";
 
-function NavBar(changeHome, changeCalendar, changeMascot, cerrarSesion, position) {
+function NavBar({changeHome, changeCalendar, changeMascot, cerrarSesion, position}) {
+    
     return ( 
         <div className="contNavBar" >
                 <div className="contNavLogo">
