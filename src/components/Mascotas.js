@@ -11,7 +11,7 @@ function Mascotas() {
     const [petsUser, setPetsUser] = useState([]);
     const [modalCreate, setModalCreate] = useState(false);
     useEffect(() => {
-        let urlUser = `http://localhost:3001/users/pets${userID}`;
+        let urlUser = `https://petclick-db.herokuapp.com/users/pets${userID}`;
         connet()
         async function connet() {
               fetch(urlUser)

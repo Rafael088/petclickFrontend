@@ -7,7 +7,7 @@ function Mascota({data}) {
     const img = "TomImg";
     const [modalDelete, setModalDelete] = useState(false);
     async function changeDelete() {
-            let urlPets = `http://localhost:3001/pets${data.idpet}`;
+            let urlPets = `https://petclick-db.herokuapp.com/pets${data.idpet}`;
             await fetch(urlPets,{
                 method: 'DELETE',
             })

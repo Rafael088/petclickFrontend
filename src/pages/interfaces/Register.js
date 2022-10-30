@@ -7,7 +7,7 @@ function Register() {
 
     const {register, handleSubmit} = useForm();
     
-    let url = 'http://localhost:3001/users';
+    let url = 'https://petclick-db.herokuapp.com/users';
     
     async function registerDB(db) {
         await fetch(url,{
