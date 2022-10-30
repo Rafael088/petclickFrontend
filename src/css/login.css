@@ -44,7 +44,6 @@
 .login .contPubli{
     width: 50%;
     height: 100%;
-    padding: 30px;
     margin: 0px;
     background-image: url('../pages/login/login.jpg');
     background-size: 100%;
@@ -67,7 +66,6 @@
 .login .contForm{
     width: 50%;
     height: 100%;
-    padding: 30px;
     margin: 0px;
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     display: flex;

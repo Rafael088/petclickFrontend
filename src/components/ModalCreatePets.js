@@ -11,7 +11,7 @@ function ModalCreatePets({setModalCreate}) {
     const [position, setPosition] = useState(0);
     //Agregar Mascota
     async function addPets(db) {
-        let urlPets = "http://localhost:3001/pets";
+        let urlPets = "https://petclick-db.herokuapp.com/pets";
         await fetch(urlPets,{
             method: 'POST',
             headers: {

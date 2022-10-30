@@ -12,7 +12,7 @@ function Login() {
     const {register, handleSubmit} = useForm();
     const [cliModal, setCliModal] = useState(0);
     
-    let url = 'http://localhost:3001/users';
+    let url = 'https://petclick-db.herokuapp.com/users';
     function conexionDb(db) {
         axios.get(url)
         .then((res)=>{
@@ -30,7 +30,6 @@ function Login() {
         }
         )
     }
-
     return ( 
         <div className="login">
             <div className="contPubli">
