@@ -25,7 +25,6 @@ function HomeComp() {
                 <CompStore titulo="Clinicas Veterinarias" listStore={listStore.Clinicas}/>
                 <CompStore titulo="Esteticas Veterinarias" listStore={listStore.Esteticas}/>
                 <CompStore titulo="Guarderias y Tiendas" listStore={listStore.Guarderias}/>
-                
             </div>
         </div>
      );

@@ -2,7 +2,7 @@
 import HomeComp from '../../components/HomeComp';
 import Cookies from 'universal-cookie';
 import '../../css/home.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Mascotas from '../../components/Mascotas';
 import Calendario from '../../components/Calendar';
 import NavBar from '../../components/NavBar';
@@ -26,6 +26,14 @@ function Home() {
         cookies.remove('rol', {path:"/"});
         window.location.href="./";
     }
+
+    useEffect(() => {
+        
+      if (cookies.get('id')===undefined) {
+        window.location.href="./";
+      }
+    }, [])
+    
     return ( 
         <div className="contHome">
             <NavBar changeHome={changeHome} changeCalendar={changeCalendar} changeMascot={changeMascot} cerrarSesion={cerrarSesion} position={position}/>

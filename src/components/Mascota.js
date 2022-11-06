@@ -2,7 +2,7 @@ import '../css/mascota.css';
 import MaxImg from '../img/perritoMax.png';
 import TomImg from '../img/tomGato.png';
 import React, { useState } from 'react';
-
+import pdf from '../img/historiaClinica.pdf';
 function Mascota({data}) {
     const img = "TomImg";
     const [modalDelete, setModalDelete] = useState(false);
@@ -19,6 +19,7 @@ function Mascota({data}) {
                 <p>Estas seguro de Eliminar esta mascota?</p>
                 <b>Esta acción es irreversible</b>
                 <button onClick={()=> changeDelete()}>Aceptar</button>
+                <button onClick={()=> setModalDelete(false)} id='fail'> Cancelar </button>
             </div>:<></>}
             <div className='head'>
                 <img src={img==="MaxImg"?MaxImg:TomImg} alt=""/>
@@ -69,9 +70,8 @@ function Mascota({data}) {
                 </div>
             </div>
             <div className='footer'>
-                <p>Historia Clinica</p>
-                <p>Datos Medicos</p>
-                <button>Guardar</button>
+                <a href={pdf} download>Historia Clinica</a>
+                <a>Datos Medicos</a>
             </div>
         </div>
      );

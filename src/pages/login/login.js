@@ -1,6 +1,6 @@
 import '../../css/login.css';
 import {useForm } from'react-hook-form';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 import ModalValid from '../../components/ModalValid';
@@ -30,6 +30,12 @@ function Login() {
         }
         )
     }
+    useEffect(() => {
+        
+        if (cookies.get('id')!==undefined) {
+          window.location.href="./home";
+        }
+      }, [])
     return ( 
         <div className="login">
             <div className="contPubli">
