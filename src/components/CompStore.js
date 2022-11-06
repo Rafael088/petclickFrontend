@@ -7,7 +7,7 @@ function CompStore({titulo, listStore}) {
             <h4>{titulo}</h4>
             <div className="contList">
             {listStore.map((name, id) => (
-                <Store key={id} name={name} />
+                <Store key={id} name={name} ruta={name}/>
             ))}
             </div>
         </div>
